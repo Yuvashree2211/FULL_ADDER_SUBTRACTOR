@@ -1,3 +1,7 @@
+NAME: YUVASHREE R
+
+REG NO: 212224040378
+
 # FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
@@ -38,18 +42,32 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
-**Procedure**
+![Screenshot 2025-04-21 221754](https://github.com/user-attachments/assets/07efece1-6e81-4c16-b5a1-8c85e4368e36)
 
-Write the detailed procedure here
+![Screenshot 2025-04-21 221808](https://github.com/user-attachments/assets/b50ea26d-2d9c-428a-bcb0-914e8d88fa0f)
+
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+```
+module exp4(a,b,cin,c,d,bin,sum,cout,difference,bout); 
+input a,b,cin,c,d,bin;
+output sum, cout, difference, bout;
+assign sum=a^b^cin;
+assign cout=(a&b) | (b&cin) | (cin&a);
+assign difference=a^b^bin;
+assign bout=(~a&b) | (bin&(~a))| (bin&~b);
+endmodule
+```
 
 **RTL Schematic**
 
+![Screenshot 2025-04-21 231437](https://github.com/user-attachments/assets/e7ad695c-dd8d-4556-a352-4ee72f3e1972)
+
+
 **Output Timing Waveform**
+
+![Screenshot 2025-04-21 231506](https://github.com/user-attachments/assets/217471e4-3d14-43c5-99e2-78ed65df0167)
+
 
 **Result:**
 
