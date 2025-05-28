@@ -2,7 +2,7 @@ NAME: YUVASHREE R
 
 REG NO: 212224040378
 
-# FULL_ADDER_SUBTRACTOR
+# FULL ADDER SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
